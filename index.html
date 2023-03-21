@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
+
+    <!-- JS -->
+    <script src="./resources/nav.js" defer></script>
+    <!-- <script src="./resources/observers.js" defer></script> -->
+    <script src="./resources/test.js" defer></script>
+
+    <title>travvely travel website</title>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link href="./resources/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.webp">
+    <link rel="manifest" href="./resources/favicon/site.webmanifest">
+</head>
+
+<body>
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- HERO & NAV SECTION -->
+        <section class="hero-container">
+            <header class="primary-header flex">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="./index.html">travvely&#174;</a> 
+                </div>
+        
+                <!-- NAV BAR -->
+                <nav>
+                    <ul id="primary-navigation" class="primary-navigation flex">
+                        <li><a href="./pages/about/about.html">About Us</a></li>
+                        <li><a href="./pages/contact/contact.html">Contact-Us</a></li>
+                        <li><a href="./pages/gallery/gallery.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- MOBILE NAV BAR -->
+                <div class="burger" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="menu-text">MENU</span>
+                    <span class="close-text">CLOSE</span>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        
+            </header>
+
+            <div class="herotext-container">
+                <div class="hero-text">
+                    <h1>Explore, Discover, Live.</h1>
+                    <p>Take a break from every day's busy life!! We help you explore the world's best destinations for your vacation.</p>
+                    <div class="cta-btn">
+                        <a class="learn-cta" href="">GET STARTED NOW&nbsp;<span
+                                class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- TOP DESTINATIONS SECTION -->
+        <section class="destinations-container">
+            <div class="destinations">
+                <!-- header -->
+                <h1>Top 3 Destinations By: </h1>
+
+                <!-- tabs -->
+                <div class="tab">
+                    <button class="tablinks foods" onclick="openDestinationBy(event, 'food')" id="defaultOpen">Food & Wine</button>
+                    <button class="tablinks citys" onclick="openDestinationBy(event, 'city')">City Thrills</button>
+                    <button class="tablinks beachs" onclick="openDestinationBy(event, 'beach')">Beach</button>
+                    <button class="tablinks safaris" onclick="openDestinationBy(event, 'safari')">Safari</button>
+                    <button class="tablinks cultures" onclick="openDestinationBy(event, 'culture')">Culture</button>
+                    <button class="tablinks natures" onclick="openDestinationBy(event, 'nature')">Nature</button>
+                </div>
+
+                <!-- tab-content container -->
+                <div class="tabcontent-container">
+
+                    <!-- tab-content -->
+                    <!-- FOOD -->
+                    <div id="food" class="tabcontent">
+                        <div class="food france content">
+                            <img src="./resources/images/food/french.jpg" alt="">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Lyon, France.</span></span>
+                            <p>Visit Lyon and get one of the greatest cuisines in the world, the French dish. Be it
+                                the Boeuf Bourguignon, the Coq Au Vin, the Potatoes Dauphinoise, Cassoulet, Lamb Chops with
+                                a Cognac Dijon Cream Sauce or Chicken Cordon, Lyon will leave you asking for more. 
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.html?ss=lyon&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=-1448468&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=347586173cba025d&ac_meta=GhAzNDc1ODYxNzNjYmEwMjVkIAAoATICZW46BGx5b25AAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Lyon
+                            </a>
+                        </div>
+                
+                        <div class="food sa content">
+                            <img src="./resources/images/food/wine.jpg" alt="vineyard">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Stellenbosch, South Africa.</span></span>
+                            <p> Stellenbosch is perfectly positioned to craft some of the best red wines in the world. Come and join the beautiful Tasting Rooms
+                                 for a personalised experience with wines, or alternatively indulge your senses on the vineyard experiences as a true
+                                 means of immersing yourself in wine.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Stellenbosch%2C+Western+Cape%2C+South+Africa&ssne=Lyon&ssne_untouched=Lyon&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-1287082&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=da9287459a4802b0&ac_meta=GhBkYTkyODc0NTlhNDgwMmIwIAAoATICZW46BnN0ZWxsZUAASgBQAA%3D%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Stellenbosch
+                            </a>
+                        </div>
+                
+                        <div class="food italy content">
+                            <img src="./resources/images/food/italian.jpg" alt="italian cuisine">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Bologna, Italy.</span></span>
+                            <p>Bologna. Known by many as the 'culinary capital of Italy', the city of Bologna is arguably the best food city in Italy.
+                                You have to try the Risotto, Pizza, Pasta, Gnocchi, Pesto alla Genovese, Lasagne, and least but not
+                                last Gelato (Ice cream). Don't believe me? Visit Bologna and test it yourself.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Bologna
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- CITY -->
+                    <div id="city" class="tabcontent">
+                        <div class="city copenhagen content">
+                            <img src="./resources/images/cities/copenhagen.jpg" alt="copenhagen city">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Copenhagen, Denmark.</span></span>
+                            <p>The eternally cool city highlight its prowess with all things design, as the official UNESCO World Capital of Architecture in 2023.
+                                Visit the contemporary parks and starchitect-designed skyscrapers for a look at the future of the urban environment.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Copenhagen
+                            </a>
+                        </div>
+                
+                        <div class="city madrid content">
+                            <img src="./resources/images/cities/madrid.jpg" alt="madrid city">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Madrid, Spain.</span></span>
+                            <p>Madrid, Spain's central capital, is a city of elegant boulevards and expansive, manicured parks such as the Buen Retiro. It’s renowned for
+                                its rich repositories of European art, including the Prado Museum’s works by Goya, Velázquez and other Spanish masters.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Madrid
+                            </a>
+                        </div>
+                
+                        <div class="city dubai content">
+                            <img src="./resources/images/cities/dubai.jpg" alt="dubai city">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Dubai, UAE.</span></span>
+                            <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene.
+                                Visit the Burj Khalifa, an 830m-tall tower, dominating the skyscraper-filled skyline.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Dubai
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- BEACH -->
+                    <div id="beach" class="tabcontent">
+                        <div class="beach maldives content">
+                            <img src="./resources/images/beach/maldives.jpg" alt="maldives coastline">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">The Maldives.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit The Maldives
+                            </a>
+                        </div>
+                
+                        <div class="beach bora content">
+                            <img src="./resources/images/beach/bora.jpg" alt="bora bora beaches">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Bora Bora, French Polynesia.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Bora Bora
+                            </a>
+                        </div>
+                
+                        <div class="beach diani content">
+                            <img src="./resources/images/beach/diani.jpg" alt="diani beach">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Diani, Kenya.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Diani
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- SAFARI -->
+                    <div id="safari" class="tabcontent">
+                        <div class="safari kenya content">
+                            <img src="./resources/images/safari/kenya.jpg" alt="safari huts">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Masai Mara, Kenya.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Masai Mara
+                            </a>
+                        </div>
+                
+                        <div class="safari namibia content">
+                            <img src="./resources/images/safari/namibia.jpg" alt="zebras">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Namib, Namibia.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Namibia
+                            </a>
+                        </div>
+                
+                        <div class="safari rwanda content">
+                            <img src="./resources/images/safari/rwanda.jpg" alt="orangutan">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Rwanda.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Rwanda
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- CULTURE -->
+                    <div id="culture" class="tabcontent">
+                        <div class="culture cairo content">
+                            <img src="./resources/images/culture/cairo.jpg" alt="pyramids">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Cairo, Egypt.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Cairo
+                            </a>
+                        </div>
+                
+                        <div class="culture morocco content">
+                            <img src="./resources/images/culture/morocco.jpg" alt="historical blue city">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Chefchaouen, Morocco.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Chefchaouen
+                            </a>
+                        </div>
+                
+                        <div class="culture uk content">
+                            <img src="./resources/images/culture/uk.jpg" alt="a castle">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Edinburgh, UK.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Edinburgh
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- NATURE -->
+                    <div id="nature" class="tabcontent">
+                        <div class="nature costarica content">
+                            <img src="./resources/images/nature/costarica.jpg" alt="water rafting">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Costa-Rica.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Costa-Rica
+                            </a>
+                        </div>
+                
+                        <div class="nature nz content">
+                            <img src="./resources/images/nature/newzealand.jpg" alt="a hiker">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">New-Zealand.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit New-Zealand
+                            </a>
+                        </div>
+                
+                        <div class="nature turkey content">
+                            <img src="./resources/images/nature/turkey.jpg" alt="hot air baloons">
+                            <span><i class="fa-solid fa-location-pin"></i><span class="bold">Turkey.</span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab ex pariatur, deleniti fugiat sequi quos
+                                ratione repellat non laborum natus voluptatum cum minima, vel temporibus numquam voluptatibus facilis
+                                repellendus.
+                            </p>
+                            <a
+                                href="https://www.booking.com/searchresults.en-us.html?ss=Bologna%2C+Emilia-Romagna%2C+Italy&ssne=Stellenbosch&ssne_untouched=Stellenbosch&label=gen173nr-1FCAEoggI46AdIM1gEaHaIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4Aq__56AGwAIB0gIkNDQ1MjMwZGMtNGRmZS00ZWI5LWFlYjUtMzliMjczZTEwNDdj2AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-111742&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=cc93874be3340691&ac_meta=GhBjYzkzODc0YmUzMzQwNjkxIAAoATICZW46B2JvbG9nbmFAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                                target="_blank">
+                                Visit Turkey
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <!-- FAQ section -->
+        <section class="faq-container">
+            <h1>Do you have any Questions. View the FAQs below or <a href="./pages/contact/contact.html">Contact Us</a></h1>
+            <div class="accordion">
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question1" class="accordion-input">
+                    <label for="question1" class="accordion-label">&#x2022; What is the average cost for a website?</label>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis fugiat debitis reiciendis quisquam praesentium architecto commodi eveniet nisi esse! ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question2" class="accordion-input">
+                    <label for="question2" class="accordion-label">&#x2022; How long will I wait for my website to be ready?</label>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eaque odio sed quas eveniet cum laudantium neque fuga debitis ipsam. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question3" class="accordion-input">
+                    <label for="question3" class="accordion-label">&#x2022; Where do I start?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora amet rerum ea corporis dignissimos optio minima porro est perspiciatis enim. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question4" class="accordion-input">
+                    <label for="question4" class="accordion-label last">&#x2022; Do you offer technical support  24/7?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora amet rerum ea corporis dignissimos optio minima porro est perspiciatis enim. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-container">
+            <div class="quick-links footer-types">
+                <h1>Quick Links</h1>
+                <div class="footer-links">
+                    <a href="./pages/contact/contact.html">Contact Us</a>
+                    <a href="./pages/gallery/gallery.html">Portfolio</a>
+                    <a href="./pages/about/about.html">About Us</a>
+                    <a href="./pages/terms/terms.html">Terms and Conditions</a>
+                    <a href="./pages/attribution/attributions.html">Attributions</a>
+                </div>
+            </div>
+
+
+            <div class="socials footer-types">
+                <h1>Socials</h1>
+                <div class="footer-links" id="social">
+                    <a href="https://facebook.com" target="_blank" class="facebook"><span class="fa-brands fa-square-facebook"></span></a>
+                    <a href="https://instagram.com" target="_blank"><span class="fa-brands fa-square-instagram"></span></a>
+                    <a href="https://twitter.com" target="_blank"><span class="fa-brands fa-square-twitter"></span></a>
+                    <a href="https://youtube.com" target="_blank"><span class="fa-brands fa-square-youtube"></span></a>
+                </div>
+            </div>
+        </section>
+        <p class="footer-text">&copy;Sniptech Inc, 2022 | All rights Reserved | Made with <span class="fa-solid fa-heart"></span> by <a href="https://github.com/pggitau" target="_blank">R3t3p</a></p>
+    </footer>
+        
+    <!-- typed effect -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Sniptech&#174;", "Web Designers",  "Web Developers"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script> -->
+</body>
+</html>
