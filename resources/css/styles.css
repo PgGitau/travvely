@@ -36,37 +36,20 @@ html {
     }
 }
 
-/* MAIN STYLING */
-/* main {
-    border: 2px solid rgb(212, 10, 10);
-    margin-top: 85px;
-} */
-/* MAIN media queries */
-/* @media (min-width: 641px) {
-    main {
-        margin-top: 96px;
-    }
-}
-@media (min-width: 230px) and (max-width: 360px) {
-    main {
-        margin-top: 4.25rem;
-    }
-} */
-
 
 
 /* PRIMARY-HEADER CLASS STYLING(LOGO AND NAV CONTAINER) */
 .primary-header {
     /* border: 2px solid rgba(41, 23, 1, 0.514); */
-    /* backdrop-filter: blur(2px); */
+    /* backdrop-filter: blur(40px); */
     padding: 1rem;
     height: 6rem;
     /* min-height: 6rem; */
-    /* background-color: #f5f5f5; */
+    /* background-color: #1f081257; */
 
     z-index: 9999;
 
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
@@ -111,15 +94,15 @@ html {
     font-weight: bold;
     text-decoration: none;
 }
-/* @media (min-width: 641px) {
+@media (max-width: 321px) {
     .logo {
-        padding: .2rem 2rem;
+        padding: .2rem .3rem;
     }
-} */
+}
 
 /* PRIMARY-NAVIGATION CLASS STYLING(NAV) */
 .primary-navigation {
-    /* border: 2px solid rgb(22, 2, 2); */
+    border: 2px solid rgb(22, 2, 2);
     border-top: 2px solid #0000004b;
     border-left: 2px solid #0000004b;
     padding: min(20vh, 10rem) 2rem;
@@ -132,7 +115,7 @@ html {
     inset: 5.8rem 0 0 40%;
 
     backdrop-filter: blur(10px);
-    background-color: #030e0077;
+    background-color: #1f08127c;
     flex-direction: column;
     align-items: center;
 }
@@ -149,9 +132,9 @@ html {
                 color 300ms ease-in-out;
 }
 .primary-navigation li:hover {
-    background-color: 0;
-    color: #f46036;
-    border: 0;
+    background-color: transparent;
+    color: #FF1B1C;
+    border: none;
 }
 .primary-navigation li:hover a {
     color: inherit;
@@ -197,8 +180,7 @@ html {
 /* Non-mobile media queries for primary navigation  */
 @media (min-width: 641px) {
     .primary-navigation {
-        border-top: 0;
-        border-left: 0;
+        border: none;
         background-color: transparent;
         /* border: 2px solid rgb(224, 207, 207); */
         position: relative;
@@ -221,7 +203,7 @@ html {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #000000;
+    background-color: #f5f5f5;
     margin: 5px;
 }
 /* media queries for .burger */
@@ -262,7 +244,7 @@ html {
 
 /* MENU and CLOSE text styling */
 .menu-text, .close-text {
-    color: #000000;
+    color: #f5f5f5;
     position: relative;
     font-size: 1.1rem;
     font-weight: bold;
@@ -295,13 +277,15 @@ html {
 
 /* HERO SECTION */
 .hero-container {
+    /* border: 2px solid red; */
     text-align: center;
     height: 650px;
-    
     background-image: url("../images/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 
     position: relative;
     z-index: 1;
@@ -319,38 +303,34 @@ html {
 }
 .herotext-container {
     /* border: 2px solid blue; */
-    /* filter: blur(1px);
-    -webkit-filter: blur(1px); */
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
+   
     width: 90%;
     margin-inline: auto;
-    height: 83%;
+    height: 50%;
     /* flex-direction: column; */
 }
 .hero-text {
     /* border: 2px solid wheat; */
-    /* backdrop-filter: blur(3px); */
     padding-block: 1rem;
     color: #f5f5f5;
 
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     gap: 2rem;
 }
 .hero-text h1 {
-    font-size: 4.5rem;
-    line-height: 4.0rem;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 .hero-text p {
     margin-bottom: 2rem;
-    /* backdrop-filter: blur(2px); */
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     /* width: 50%; */
     margin-inline: auto;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
 }
 .cta-btn a {
     color: #e9e7e7;
@@ -359,7 +339,7 @@ html {
     font-weight: 500;
     text-decoration: none;
     border: 2px solid black;
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
     transition: all 300ms ease-in-out;
 }
 .cta-btn a:hover {
@@ -367,50 +347,90 @@ html {
     color: #000000;
 }
 
+/* media queries */
+@media (min-width: 321px) {
+    .hero-text h1 {
+        /* border: 2px solid red; */
+        font-size: 3.4rem;
+        line-height: 3.1rem;
+    }
+    .herotext-container {
+        /* border: 2px solid blue; */
+        padding-top: 2rem;
+    }
+}
 @media (min-width: 641px) {
     .herotext-container {
         width: 70%;
+        padding-top: 1rem;
     }
+    .hero-text h1 {
+        font-size: 4.5rem;
+        line-height: 4.0rem;
+    }
+    .hero-text p {
+        font-size: 1.5rem;
+        line-height: 1.4rem;
+    }
+}
+@media (min-width: 1025px) {
+    .herotext-container {
+        width: 60%;
+        padding-top: 1.5rem;
+    }
+    .hero-text h1 {
+        font-size: 5rem;
+        line-height: 4.9rem;
+    }   
 }
 
 
 /* TOP PICK SECTION */
-.toppick-header {
-    text-align: center;
-    /* display: flex;
-    align-self: center; */
+.toppick-container {
+    /* border: 2px solid black; */
+    padding: .2rem;
     margin-top: 8rem;
 
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.toppick-header {
+    /* text-align: center; */
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    align-self: center;
     position: relative;
 }
 .toppick-header::after {
     content: "";
     position: absolute;
     top: 110%;
-    left: 41.3%;
-    width: 10%;
-    height: 9%;
+    left: 0;
+    width: 50%;
+    height: 5px;
     background-color: #FF1B1C;
     z-index: -1;
 }
-.toppick-container {
+.toppick-content {
     /* border: 2px solid red; */
-    padding: .5rem;
-    margin-block: 2rem;
+    /* padding: .5rem; */
+    /* margin-block: 2rem; */
     display: flex;
+    flex-direction: column-reverse;
 }
 .toppick-info {
     /* border: 2px solid yellow; */
-    width: 30%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: .5rem;
     justify-content: center;
 }
 .toppick-info h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .toppick-info p {
     font-size: 1.1rem;
@@ -422,23 +442,42 @@ html {
     color: #1F0812;
     text-decoration: none;
     width: fit-content;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
-.toppick-content {
+.toppick-images {
     /* border: 2px solid black; */
-    padding: .5rem;
+    padding-block: .5rem;
     display: flex;
     gap: .5rem;
+    overflow-x: scroll;
 }
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: #1F0812; 
+  }
+   
+  /* Scrollbar Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+  }
+  
+  /* Scrollbar Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF1B1C; 
+  }
 .top-images {
     border: 1px solid black;
+    
     border-radius: 1rem;
     background-position: center;
     background-size: cover;
-    height: 450px;
-    width: 300px;
+    min-height: 450px;
+    min-width: 300px;
 
     position: relative;
     z-index: 1;
@@ -465,6 +504,107 @@ html {
     background-image: url("../images/Bali/volcano.jpg");
 }
 
+
+/* media queries */
+@media (min-width: 769px) {
+    .toppick-container {
+        /* border: 2px solid black; */
+        padding: .5rem;
+        margin-top: 8rem;
+    
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .toppick-header {
+        /* text-align: center; */
+        font-size: 2rem;
+        align-self: center;
+        position: relative;
+    }
+    .toppick-header::after {
+        content: "";
+        position: absolute;
+        top: 110%;
+        left: 0;
+        width: 50%;
+        height: 5px;
+        background-color: #FF1B1C;
+        z-index: -1;
+    }
+    .toppick-content {
+        /* border: 2px solid red; */
+        flex-direction: row;
+        padding: .5rem;
+        /* margin-block: 2rem; */
+        display: flex;
+    }
+    .toppick-info {
+        /* border: 2px solid yellow; */
+        width: 30%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+    .toppick-info h1 {
+        font-size: 2rem;
+    }
+    .toppick-info p {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+    .toppick-info a {
+        border: 2px solid black;
+        background-color: #FF1B1C;
+        color: #1F0812;
+        text-decoration: none;
+        width: fit-content;
+        padding: .5rem 1rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .toppick-images {
+        /* border: 2px solid black; */
+        padding: .5rem;
+        display: flex;
+        gap: .5rem;
+    }
+    .top-images {
+        border: 1px solid black;
+        border-radius: 1rem;
+        background-position: center;
+        background-size: cover;
+        height: 450px;
+        width: 300px;
+    
+        position: relative;
+        z-index: 1;
+    }
+    .top-images::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        border-radius: .9rem;
+        opacity: .4;
+        z-index: -1;
+    }
+    .gate {
+        background-image: url("../images/Bali/bali-gate.jpg");
+    }
+    .beach {
+        background-image: url("../images/Bali/beach.jpg");
+    }
+    .mountain {
+        background-image: url("../images/Bali/volcano.jpg");
+    }
+}
 
 
 
@@ -564,7 +704,7 @@ html {
 .tab button:hover {
     border: 4px solid #f46036;
 }
-  
+
 /* Create an active/current tablink class */
 .tab button.active {
     text-decoration: underline;
@@ -572,7 +712,7 @@ html {
     text-transform: uppercase;
     border: 10px solid #FF1B1C;
 }
-  
+
 /* Style the tab content */
 .tabcontent {
     display: none;
@@ -643,7 +783,7 @@ html {
 } */
 .content span {
     padding-left: .5rem;
-    font-style: italic;  
+    font-style: italic;
 }
 .content i {
     color: #FF1B1C;
