@@ -11,6 +11,7 @@
     <script src="./resources/nav.js" defer></script>
     <!-- <script src="./resources/observers.js" defer></script> -->
     <script src="./resources/test.js" defer></script>
+    <script src="./navbar.js" defer></script>
 
     <title>travvely travel website</title>
 
@@ -28,36 +29,38 @@
 </head>
 
 <body>
+    <!-- LOGO AND NAV BAR SECTION -->
+    <header class="primary-header flex">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="./index.html">travvely&#174;</a> 
+        </div>
+
+        <!-- NAV BAR -->
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation flex">
+                <li><a href="./pages/about/about.html">About Us</a></li>
+                <li><a href="./pages/contact/contact.html">Contact-Us</a></li>
+                <li><a href="./pages/gallery/gallery.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <!-- MOBILE NAV BAR -->
+        <div class="burger" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="menu-text">MENU</span>
+            <span class="close-text">CLOSE</span>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </header>
+
+
     <!-- MAIN SECTION -->
     <main>
-        <!-- HERO & NAV SECTION -->
+        <!-- HERO SECTION -->
         <section class="hero-container">
-            <header class="primary-header flex">
-                <!-- LOGO -->
-                <div class="logo">
-                    <a href="./index.html">travvely&#174;</a> 
-                </div>
-        
-                <!-- NAV BAR -->
-                <nav>
-                    <ul id="primary-navigation" class="primary-navigation flex">
-                        <li><a href="./pages/about/about.html">About Us</a></li>
-                        <li><a href="./pages/contact/contact.html">Contact-Us</a></li>
-                        <li><a href="./pages/gallery/gallery.html">Portfolio</a></li>
-                    </ul>
-                </nav>
-        
-                <!-- MOBILE NAV BAR -->
-                <div class="burger" aria-controls="primary-navigation" aria-expanded="false">
-                    <span class="menu-text">MENU</span>
-                    <span class="close-text">CLOSE</span>
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-        
-            </header>
-
             <div class="herotext-container">
                 <div class="hero-text">
                     <h1>Explore, Discover, Live.</h1>
@@ -72,24 +75,27 @@
         </section>
 
         <!-- TOP PICK -->
-        <h1 class="toppick-header">Top Destination:</h1>
         <section class="toppick-container">
-            <div class="toppick-info">
-                <h1 class="italics">Bali, Indonesia.</h1>
-                <p>You'll find beaches, volcanoes, Komodo dragons and jungles 
-                    sheltering elephants, orangutans and tigers.
-                </p>
-                <a href="">
-                    Visit Bali
-                    <span><i class="fa-solid fa-plane-departure"></i></span>
-                </a>
-            </div>
+            <h1 class="toppick-header">Top Rated Destination:</h1>
+
             <div class="toppick-content">
-                <div class="top-images gate">
+                <div class="toppick-info">
+                    <h1 class="italics">Bali, Indonesia.</h1>
+                    <p>You'll find beaches, volcanoes, Komodo dragons and jungles 
+                        sheltering elephants, orangutans and tigers.
+                    </p>
+                    <a href="">
+                        Visit Bali
+                        <span><i class="fa-solid fa-plane-departure"></i></span>
+                    </a>
                 </div>
-                <div class="top-images beach">
-                </div>
-                <div class="top-images mountain">
+                <div class="toppick-images">
+                    <div class="top-images gate">
+                    </div>
+                    <div class="top-images beach">
+                    </div>
+                    <div class="top-images mountain">
+                    </div>
                 </div>
             </div>
         </section>
