@@ -92,7 +92,7 @@
                 <div class="toppick-images">
                     <div class="top-images gate">
                     </div>
-                    <div class="top-images beach">
+                    <div class="top-images bali-beach">
                     </div>
                     <div class="top-images mountain">
                     </div>
@@ -109,22 +109,22 @@
                 <!-- tabs -->
                 <div class="tab">
                     <!-- add id="defaultOpen" to button you want by default to be open -->
-                    <button class="tablinks foods" onclick="openDestinationBy(event, 'food')">Food & Wine</button>
-                    <button class="tablinks citys" onclick="openDestinationBy(event, 'city')">City Thrills</button>
-                    <button class="tablinks beachs" onclick="openDestinationBy(event, 'beach')">Beach</button>
-                    <button class="tablinks safaris" onclick="openDestinationBy(event, 'safari')">Safari</button>
-                    <button class="tablinks cultures" onclick="openDestinationBy(event, 'culture')">Culture</button>
-                    <button class="tablinks natures" onclick="openDestinationBy(event, 'nature')">Nature</button>
+                    <button class="tablinks foods" onclick="openDestinationBy(event, 'food'); smoothScroll(document.getElementById('second'))">Food & Wine</button>
+                    <button class="tablinks citys" onclick="openDestinationBy(event, 'city'); smoothScroll(document.getElementById('second'))">City Thrills</button>
+                    <button class="tablinks beachs" onclick="openDestinationBy(event, 'beach'); smoothScroll(document.getElementById('second'))">Beach</button>
+                    <button class="tablinks safaris" onclick="openDestinationBy(event, 'safari'); smoothScroll(document.getElementById('second'))">Safari</button>
+                    <button class="tablinks cultures" onclick="openDestinationBy(event, 'culture'); smoothScroll(document.getElementById('second'))">Culture</button>
+                    <button class="tablinks natures" onclick="openDestinationBy(event, 'nature'); smoothScroll(document.getElementById('second'))">Nature</button>
                 </div>
 
                 <!-- tab-content container -->
-                <div class="tabcontent-container">
+                <div class="tabcontent-container" id="second">
 
                     <!-- tab-content -->
                     <!-- FOOD -->
                     <div id="food" class="tabcontent">
                         <div class="food france content">
-                            <div class="content-img lyon"></div>
+                            <img src="./resources/images/food/french.jpg" alt="french cuisine">
                             <span><i class="fa-solid fa-location-pin"></i><span class="bold">Lyon, France.</span></span>
                             <p>Visit Lyon and get one of the greatest cuisines in the world, the French dish. Be it
                                 the Boeuf Bourguignon, the Coq Au Vin, the Potatoes Dauphinoise, Cassoulet, Lamb Chops with
@@ -139,7 +139,7 @@
                         </div>
                 
                         <div class="food sa content">
-                            <div class="content-img stell"></div>
+                            <img src="./resources/images/food/wine.jpg" alt="Stellenbosch vineyard">
                             <span><i class="fa-solid fa-location-pin"></i><span class="bold">Stellenbosch, South Africa.</span></span>
                             <p> Stellenbosch is perfectly positioned to craft some of the best red wines in the world. Come and join the beautiful Tasting Rooms
                                  for a personalised experience with wines, or alternatively indulge your senses on the vineyard experiences as a true
@@ -154,7 +154,7 @@
                         </div>
                 
                         <div class="food italy content">
-                            <div class="content-img bologna"></div>
+                            <img src="./resources/images/food/italian.jpg" alt="italian dish">
                             <span><i class="fa-solid fa-location-pin"></i><span class="bold">Bologna, Italy.</span></span>
                             <p>Bologna. Known by many as the 'culinary capital of Italy', the city of Bologna is arguably the best food city in Italy.
                                 You have to try the Risotto, Pizza, Pasta, Gnocchi, Pesto alla Genovese, Lasagne, and least but not
