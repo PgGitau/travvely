@@ -41,7 +41,6 @@
             <ul id="primary-navigation" class="primary-navigation flex">
                 <li><a href="./pages/about/about.html">About Us</a></li>
                 <li><a href="./pages/contact/contact.html">Contact-Us</a></li>
-                <li><a href="./pages/gallery/gallery.html">Portfolio</a></li>
             </ul>
         </nav>
 
@@ -410,41 +409,35 @@
         </section>        
 
         
-        <!-- FAQ section -->
-        <section class="faq-container">
-            <h1>Do you have any Questions. View the FAQs below or <a href="./pages/contact/contact.html">Contact Us</a></h1>
-            <div class="accordion">
-                <div>
-                    <input type="checkbox" name="faq-accordion" id="question1" class="accordion-input">
-                    <label for="question1" class="accordion-label">&#x2022; What is the average cost for a website?</label>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis fugiat debitis reiciendis quisquam praesentium architecto commodi eveniet nisi esse! ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
-                    </div>
-                </div>
+        <!-- CTA section -->
+        <section class="cta-container">
+            <div class="cta-logo">
+                <span><i class="fa-solid fa-envelope-circle-check"></i></span>
+                <h1>Get Updates & More</h1>
+                <p>Subscribe to get travel updates on the go.</p>
+            </div>
 
-                <div>
-                    <input type="checkbox" name="faq-accordion" id="question2" class="accordion-input">
-                    <label for="question2" class="accordion-label">&#x2022; How long will I wait for my website to be ready?</label>
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eaque odio sed quas eveniet cum laudantium neque fuga debitis ipsam. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+            <div class="contact-form">
+                <form class="form" id="form" action="https://formspree.io/f/xknaqkjn" method="POST">
+                    <!-- HONEYPOT(to catch spammers ) -->
+                    <input type="text" name="_honey" style="display: none">
+        
+                    <div class="form-control email">
+                        <label for="email" class="block">Email</label>
+                        <input type="email" placeholder="johndoe@gmail.com" id="email" name="email" required>
                     </div>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="faq-accordion" id="question3" class="accordion-input">
-                    <label for="question3" class="accordion-label">&#x2022; Where do I start?</label>
-                    <div class="accordion-content">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora amet rerum ea corporis dignissimos optio minima porro est perspiciatis enim. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+        
+                    <div class="form-control terms-link form-terms">
+                        <input class="fit-content" type="checkbox" id="terms" name="terms" value="accept" required>
+                        <label for="terms" class="inline">I have read and agreed to travvely&#174;'s <a href="">Terms and
+                                Conditions</a> and the <a href="">Global Privacy Statement</a> on Data
+                            protection</label>
                     </div>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="faq-accordion" id="question4" class="accordion-input">
-                    <label for="question4" class="accordion-label last">&#x2022; Do you offer technical support  24/7?</label>
-                    <div class="accordion-content">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora amet rerum ea corporis dignissimos optio minima porro est perspiciatis enim. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+        
+                    <div class="form-control form-btn form-submit">
+                        <button type="submit">Subscribe</button>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -456,7 +449,6 @@
                 <h1>Quick Links</h1>
                 <div class="footer-links">
                     <a href="./pages/contact/contact.html">Contact Us</a>
-                    <a href="./pages/gallery/gallery.html">Portfolio</a>
                     <a href="./pages/about/about.html">About Us</a>
                     <a href="./pages/terms/terms.html">Terms and Conditions</a>
                     <a href="./pages/attribution/attributions.html">Attributions</a>
@@ -474,18 +466,7 @@
                 </div>
             </div>
         </section>
-        <p class="footer-text">&copy;Sniptech Inc, 2022 | All rights Reserved | Made with <span class="fa-solid fa-heart"></span> by <a href="https://github.com/pggitau" target="_blank">R3t3p</a></p>
+        <p class="footer-text">&copy;travvely Inc, 2022 | All rights Reserved | Made with <span class="fa-solid fa-heart"></span> by <a href="https://github.com/pggitau" target="_blank">R3t3p</a></p>
     </footer>
-        
-    <!-- typed effect -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-input", {
-            strings: ["Sniptech&#174;", "Web Designers",  "Web Developers"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true
-        });
-    </script> -->
 </body>
 </html>
