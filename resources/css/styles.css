@@ -859,7 +859,7 @@ html {
     .cta-container {
         flex-direction: row;
         gap: 1rem;
-        padding-inline: 1rem;
+        padding: 1rem;
 
         justify-content: center;
     }
